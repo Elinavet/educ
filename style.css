@@ -3,6 +3,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  top: 0;
+  position: sticky;
+  background-color: #ffffff;
+  z-index: 1;
 }
 body {
   font-family: sans-serif;
@@ -33,13 +37,12 @@ button {
   padding: 15px;
 }
 .about__image {
-  width: 500px;
+  width: 600px;
 }
 .about__sun-images {
   width: 150px;
   height: 150px;
-  margin-right: 10px;
-  margin-bottom: 500px;
+  position: absolute;
 }
 .about {
   display: flex;
@@ -71,7 +74,7 @@ button {
 }
 .about__info{
   max-width: 550px;
-  padding-left: 15px;
+  padding-left: 35px;
 }
 .form__container{
   width: 550px;
@@ -129,4 +132,49 @@ select {
 label {
   margin-bottom: 20px;
   margin-top: 20px;
+}
+button:hover {
+  transition: background-color 0.3s ease-in;
+  background-color: #f6980c ;
+  box-shadow: 0 16px 36px rgba(246 152 12 / 20%)
+}
+footer {
+  padding: 90px 20px 90px 20px;
+  font-size: 16px;
+  font-weight: 600px;
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
+}
+.footer__group {
+  margin-right: 120px;
+  margin-left: 120px;
+}
+.footer__group h3 {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+}
+.footer__links a {
+  margin-bottom: 15px;
+}
+.footer__copyright {
+margin-top: 40px;
+text-align: center;
+opacity: 0.5;
+}
+.about__sun-images {
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes rotate {
+  from { transform:rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
