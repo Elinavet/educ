@@ -126,3 +126,7 @@ select {
   appearance: none;
   outline: none;
 }
+label {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
