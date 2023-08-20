@@ -179,60 +179,217 @@ opacity: 0.5;
   to { transform: rotate(360deg); }
 }
 @media (max-width: 1024px) {
-  header {
+  .header__logo {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 50px;
+  }
+  header a {
+    font-size: 20px;
+    font-weight: 500px;
+  }
+  header button {
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 20px 35px 20px 35px;
+  }
+  .header__control {
     padding-left: 20px;
     padding-right: 20px;
   }
-  section {
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .about__info {
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 70px;
+    margin-bottom: 125px;
+    max-width: 250px;
   }
-  footer {
+  .about__images {
     padding-left: 20px;
     padding-right: 20px;
+    max-width: 450px;
   }
-  header h1 {
-    font-size: 36px;
+  .about h1 {
+    font-size: 46px;
     line-height: 40px;
   }
-  .form h1 {
-    font-size: 36px;
-    line-height: 40px;
-  }  
+  .about p {
+    font-size: 24px;
+    line-height: 26px;
+  } 
   .about__image {
-    width: 280px;
+    width: 400px;
   }
   .about__sun-images {
     width: 75px;
     height: 75px;
+  }
+  .about button {
+    font-size: 18px;
+    border-radius: 12px;
+    padding: 20px 25px 20px 25px;
+    margin-top: 25px;
+  }
+  .form {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .form h1 {
+    font-size: 46px;
+    line-height: 40px;
+  }
+  .form p {
+    font-size: 24px;
+  }
+  .form__group input {
+    font-size: 15px;
+    height: 50px;
+  }
+  #budget {
+    font-size: 15px;
+    height: 50px;
+  }
+  label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .form__submit {
+    font-size: 24px;
+    font-weight: 500px;
+    margin-top: 40px;
+  }  
+  .footer__container{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__group {
+      margin-right: 10px;
+      margin-left: 10px;
+  } 
+  footer {
+    padding: 40px 10px 40px 10px;
+    font-size: 12px;
+    font-weight: 400px;
+  }  
+  .footer__group h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 720px) {
-  header {
+  .header__logo {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 50px;
+  }
+  header a {
+    font-size: 20px;
+    font-weight: 500px;
+  }
+  header button {
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 20px 35px 20px 35px;
+  }
+  .header__control {
     padding-left: 20px;
     padding-right: 20px;
   }
-  body {
-    background-color: white;
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-  section {
+  .about__info {
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 70px;
+    margin-bottom: 125px;
+    max-width: 250px;
   }
-  footer {
+  .about__images {
     padding-left: 20px;
     padding-right: 20px;
+    max-width: 450px;
   }
-  header h1 {
-    font-size: 36px;
+  .about h1 {
+    font-size: 46px;
     line-height: 40px;
   }
+  .about p {
+    font-size: 24px;
+    line-height: 26px;
+  } 
   .about__image {
-    width: 280px;
+    width: 300px;
   }
   .about__sun-images {
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
+  }
+  .about button {
+    font-size: 18px;
+    border-radius: 12px;
+    padding: 20px 25px 20px 25px;
+    margin-top: 25px;
+  }
+  .form {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .form h1 {
+    font-size: 46px;
+    line-height: 40px;
+  }
+  .form p {
+    font-size: 24px;
+  }
+  .form__group input {
+    font-size: 15px;
+    height: 50px;
+  }
+  #budget {
+    font-size: 15px;
+    height: 50px;
+  }
+  label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .form__submit {
+    font-size: 24px;
+    font-weight: 500px;
+    margin-top: 40px;
+  }  
+  .footer__container{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__group {
+      margin-right: 10px;
+      margin-left: 10px;
+  } 
+  footer {
+    padding: 40px 10px 40px 10px;
+    font-size: 12px;
+    font-weight: 400px;
+  }  
+  .footer__group h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 540px) {
